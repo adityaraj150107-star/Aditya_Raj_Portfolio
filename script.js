@@ -14,17 +14,3 @@ sections.forEach(section=>navObserver.observe(section));
 const backTop=document.getElementById('backTop');window.addEventListener('scroll',()=>backTop.classList.toggle('show',window.scrollY>450));backTop?.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 document.getElementById('year').textContent=new Date().getFullYear();
 document.getElementById('copyProfile')?.addEventListener('click',async()=>{const message=document.getElementById('copyMessage');try{await navigator.clipboard.writeText('https://github.com/adityaraj150107-star');message.textContent='GitHub profile link copied!';}catch{message.textContent='GitHub: github.com/adityaraj150107-star';}});
-
-
-// Contact section polish: reveal status when a visitor returns from the form service.
-const contactFormStatus = document.getElementById('contactFormStatus');
-const contactParams = new URLSearchParams(window.location.search);
-if (contactParams.get('message') === 'sent' && contactFormStatus) {
-  contactFormStatus.textContent = 'Thanks! If the form service accepted your message, it has been submitted.';
-  document.getElementById('contact')?.scrollIntoView({behavior:'smooth',block:'start'});
-}
-// Subtle focus feedback and browser-native validation are kept accessible.
-document.querySelectorAll('.contact-form input:not([type="hidden"]), .contact-form textarea').forEach((field) => {
-  field.addEventListener('invalid', () => field.closest('label')?.classList.add('field-invalid'));
-  field.addEventListener('input', () => field.closest('label')?.classList.remove('field-invalid'));
-});
