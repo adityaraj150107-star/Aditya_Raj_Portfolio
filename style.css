@@ -70,3 +70,15 @@ body{background:#111;color:#fff8ef}.ambient-one,.ambient-two{background:#ff7900;
 @media(max-width:950px){.skills-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.skill-item{padding:14px 16px;gap:12px;font-size:14px}.tech-icon{width:35px;height:35px;flex-basis:35px}}
 @media(max-width:650px){.skills-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.skills-title{margin-bottom:40px}.skill-item{min-height:72px;padding:10px;gap:9px;border-left-width:4px;font-size:12px;border-radius:11px}.tech-icon{width:30px;height:30px;flex-basis:30px;font-size:20px}.icon-c{font-size:35px}.contact-details{gap:20px;margin:25px 0 35px;font-size:14px}.social-icons{gap:18px}.resume-panel{align-items:flex-start;flex-direction:column;padding:22px}.resume-actions{width:100%}.resume-actions .button{flex:1}.footer-social{margin-left:auto}}
 @media(prefers-reduced-motion:reduce){.skill-item,.social-icons a,.footer-social a{transition:none}}
+
+
+/* Contact form: visitor messages delivered through FormSubmit */
+.contact-form{width:min(760px,100%);margin:0 auto;text-align:left;padding:28px;border:1px solid #302d29;border-radius:16px;background:#202020}
+.contact-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact-form label{display:flex;flex-direction:column;gap:9px;margin-bottom:18px;color:#fff8ef;font-size:13px;font-weight:700}
+.contact-form input,.contact-form textarea{width:100%;font:inherit;font-size:14px;color:#fff8ef;background:#141414;border:1px solid #45403a;border-radius:10px;padding:14px 15px;outline:none;transition:border-color .2s,box-shadow .2s}
+.contact-form textarea{resize:vertical;min-height:135px}
+.contact-form input:focus,.contact-form textarea:focus{border-color:#ff7900;box-shadow:0 0 0 3px #ff79001c}
+.contact-submit{border:0;font:inherit;font-weight:800;cursor:pointer}
+.contact-form-note{font-size:12px!important;color:#aaa!important;margin:16px 0 0!important;line-height:1.6}
+@media(max-width:600px){.contact-form{padding:18px 14px}.contact-form-grid{grid-template-columns:1fr;gap:0}.contact-form input,.contact-form textarea{font-size:16px}}
