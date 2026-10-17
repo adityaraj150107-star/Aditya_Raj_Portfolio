@@ -645,3 +645,21 @@ body.dark-mode .contact-form input,body.dark-mode .contact-form textarea{backgro
  .art-caption{display:none!important}
  .scroll-hint{margin-top:12px!important}
 }
+
+
+/* Larger portrait card; remove orbit/floating decorations around the photo */
+@media(min-width:761px){
+ .hero-art{min-height:510px!important}
+ .hero-art .profile-card{width:min(440px,100%)!important;min-height:470px!important;padding:16px 22px 22px!important}
+ .avatar-wrap{height:300px!important;margin:8px 0 2px!important}
+ .avatar-wrap::before{width:265px!important;height:275px!important;left:calc(50% - 120px)!important;top:12px!important;transform:translate(22px,14px)!important}
+ .avatar-photo{width:290px!important;height:290px!important;max-width:100%!important;object-fit:cover!important;object-position:center 18%!important}
+ .profile-card .floating-chip,.hero-art .orbit,.hero-art .art-caption{display:none!important}
+}
+@media(max-width:760px){
+ .hero-art .profile-card{width:min(370px,94vw)!important;padding:14px 18px 20px!important}
+ .avatar-wrap{height:280px!important;margin:8px 0 4px!important}
+ .avatar-wrap::before{width:225px!important;height:250px!important;left:calc(50% - 103px)!important;top:12px!important;transform:translate(19px,13px)!important}
+ .avatar-photo{width:245px!important;height:255px!important;max-width:100%!important;object-fit:cover!important;object-position:center 18%!important}
+ .profile-card .floating-chip,.hero-art .orbit,.hero-art .art-caption{display:none!important}
+}
