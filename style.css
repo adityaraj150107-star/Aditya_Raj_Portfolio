@@ -232,3 +232,41 @@ body[data-active-section] main section{animation:sectionEnter .48s ease both}
 .home-contact-item:hover{color:#ff7900;transform:translateX(4px)}
 .home-contact-icon{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;color:#ff7900;font-size:1.2rem;flex-shrink:0}
 .home-contact-icon svg{display:block}
+
+
+/* Lavender + royal purple portfolio theme */
+:root{
+ --bg:#E6E6FA;
+ --panel:#FFFFFF;
+ --panel2:#F5F3FF;
+ --text:#241B35;
+ --muted:#655B78;
+ --line:rgba(83,55,130,.17);
+ --purple:#7C3AED;
+ --blue:#8B5CF6;
+ --pink:#B794F4;
+ --green:#6D28D9;
+ --accent:#7C3AED;
+ --accent-soft:rgba(124,58,237,.12);
+}
+body{background:var(--bg);color:var(--text)}
+.ambient{opacity:.22}
+.ambient-one{background:#B9A1F7}
+.ambient-two{background:#D8B4FE}
+a:hover{color:var(--purple)}
+.button-primary,.contact-submit{background:#7C3AED!important;color:#fff!important;border-color:#7C3AED!important;box-shadow:0 8px 24px rgba(124,58,237,.22)}
+.button-primary:hover,.contact-submit:hover{background:#6D28D9!important;box-shadow:0 12px 28px rgba(124,58,237,.3)}
+.button-ghost{border-color:rgba(124,58,237,.34);color:var(--text)}
+.button-ghost:hover{background:rgba(124,58,237,.09);border-color:#7C3AED}
+.brand-mark,.eyebrow,.gradient-text,.project-link,.contact-icon,.home-contact-icon{color:#7C3AED}
+.gradient-text{background:linear-gradient(100deg,#7C3AED,#A78BFA);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.topbar,.nav-shell,.contact-card,.project-card,.expertise-card,.resume-panel,.skill-item,.hero-card{background:rgba(255,255,255,.86);border-color:var(--line);box-shadow:0 12px 38px rgba(60,35,100,.07)}
+.contact-icon,.home-contact-icon{color:#7C3AED}
+.home-contact-item:hover{color:#6D28D9}
+::selection{background:rgba(124,58,237,.22);color:#241B35}
+body.light-mode{background:#E6E6FA;color:#241B35}
+body.light-mode .contact-card,body.light-mode .project-card,body.light-mode .expertise-card,body.light-mode .resume-panel,body.light-mode .skill-item{background:#fff;color:#241B35;border-color:rgba(83,55,130,.17)}
+/* Dark mode remains deep plum with violet accents */
+body.dark-mode,body:not(.light-mode):not([data-theme="light"]){--purple:#A78BFA;--blue:#C4B5FD}
+body.dark-mode .button-primary,body:not(.light-mode):not([data-theme="light"]) .button-primary{background:#7C3AED!important}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
