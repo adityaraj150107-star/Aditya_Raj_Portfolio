@@ -565,3 +565,28 @@ body.dark-mode .topbar nav{background:#17130d!important}
 body.dark-mode .topbar nav .nav-link{color:#fff8e8!important}
 body.dark-mode .profile-card,body.dark-mode .expertise-card,body.dark-mode .project-card,body.dark-mode .journey-card,body.dark-mode .resume-panel,body.dark-mode .skill-item,body.dark-mode .skill-group,body.dark-mode .contact-card,body.dark-mode .contact-panel{background:#17130d!important;color:#fff8e8!important;border-color:rgba(255,183,3,.22)!important}
 body.dark-mode .contact-form input,body.dark-mode .contact-form textarea{background:#100e0a!important;color:#fff8e8!important;border-color:#57421b!important}
+
+
+/* Reference-style rectangular profile photo */
+.avatar-photo{
+  display:block!important;
+  width:150px!important;
+  height:175px!important;
+  object-fit:cover!important;
+  object-position:center 20%!important;
+  border-radius:12px!important;
+  flex-shrink:0;
+  position:relative;
+  z-index:2;
+  border:2px solid #ffb703!important;
+  box-shadow:0 10px 32px rgba(255,183,3,.22),0 0 0 5px rgba(255,183,3,.09)!important;
+  transition:transform .35s ease,box-shadow .35s ease!important;
+}
+.avatar-photo:hover{transform:translateY(-4px) scale(1.025)!important;box-shadow:0 15px 38px rgba(255,183,3,.3),0 0 0 6px rgba(255,183,3,.12)!important}
+.avatar-wrap{height:190px!important;margin-top:13px!important}
+.avatar-ring{width:166px!important;height:190px!important;border-radius:16px!important}
+@media(max-width:600px){
+ .avatar-photo{width:132px!important;height:158px!important;border-radius:10px!important}
+ .avatar-wrap{height:174px!important}
+ .avatar-ring{width:148px!important;height:174px!important;border-radius:14px!important}
+}
