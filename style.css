@@ -452,3 +452,39 @@ a,button{touch-action:manipulation}
 @media(hover:none){
   .expertise-card:hover,.project-card:hover,.skill-item:hover,.contact-card:hover,.resume-actions .button:hover{transform:none;box-shadow:none}
 }
+
+
+/* MOBILE MENU + DARK MODE + PHOTO FIT FIX */
+.menu-toggle{color:var(--text);cursor:pointer}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text);font-size:20px;cursor:pointer}
+body.light-mode .theme-toggle{background:#fff;color:#7C3AED;border-color:rgba(124,58,237,.22)}
+body.dark-mode .topbar,body.dark-mode .topbar nav{background:rgba(9,13,24,.97)!important;border-color:rgba(154,174,211,.18)!important}
+body.dark-mode .brand,body.dark-mode .nav-link,body.dark-mode .welcome,body.dark-mode .hero h1,body.dark-mode .typed-line,body.dark-mode .section-heading h2,body.dark-mode .section-heading p,body.dark-mode .hero-description,body.dark-mode .profile-card h2,body.dark-mode .role,body.dark-mode .project-content h3,body.dark-mode .project-content p,body.dark-mode .contact-panel h2,body.dark-mode .contact-panel p,body.dark-mode .footer{color:#F2F5FF!important}
+body.dark-mode .profile-card,body.dark-mode .expertise-card,body.dark-mode .project-card,body.dark-mode .journey-card,body.dark-mode .resume-panel,body.dark-mode .skill-item,body.dark-mode .skill-group,body.dark-mode .contact-card,body.dark-mode .contact-panel{background:#101726!important;color:#F2F5FF!important;border-color:rgba(154,174,211,.18)!important;box-shadow:0 12px 38px rgba(0,0,0,.2)}
+body.dark-mode .project-visual,body.dark-mode .placement-visual,body.dark-mode .network-visual,body.dark-mode .school-visual{background:#111b2b!important}
+body.dark-mode .mini-tags span,body.dark-mode .project-tags span{background:#172238!important;color:#d5c8ff!important;border-color:#35415c!important}
+body.dark-mode .button-ghost{background:#111827!important;color:#f2f5ff!important;border-color:#39445b!important}
+body.dark-mode .contact-form input,body.dark-mode .contact-form textarea{background:#0d1422!important;color:#f2f5ff!important;border-color:#35415c!important}
+body.dark-mode .contact-form input::placeholder,body.dark-mode .contact-form textarea::placeholder{color:#a4afc4!important}
+body.dark-mode .topbar .nav-link:hover,body.dark-mode .topbar .nav-link.active{color:#c4b5fd!important}
+.avatar-photo{object-fit:cover;object-position:center 20%;max-width:100%;height:132px;width:132px;border-radius:50%;flex-shrink:0}
+@media(max-width:760px){
+  .topbar nav{z-index:30;background:#F7F4FF!important;isolation:isolate}
+  body.dark-mode .topbar nav{background:#0D1422!important}
+  .topbar nav .nav-link{color:#241B35!important}
+  body.dark-mode .topbar nav .nav-link{color:#F2F5FF!important}
+  .hero{display:flex!important;flex-direction:column!important;align-items:stretch!important}
+  .hero-copy,.hero-art{width:100%;max-width:100%;min-width:0}
+  .hero-art{overflow:visible}
+  .profile-card{margin:0 auto;transform:none;max-width:calc(100vw - 70px)}
+  .avatar-photo{width:112px;height:112px}
+  .orbit-a,.orbit-b{pointer-events:none}
+  .scroll-hint{display:none!important}
+  .art-caption{display:none}
+  .hero-actions .button{justify-content:space-between}
+}
+@media(min-width:761px){
+  .topbar nav{display:flex!important}
+  .menu-toggle{display:none!important}
+  .hero{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}
+}
