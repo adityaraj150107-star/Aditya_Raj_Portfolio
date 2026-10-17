@@ -4,6 +4,8 @@ let wordIndex = 0, charIndex = words[0].length, deleting = true;
 function typeLoop(){ if(!typed) return; const word=words[wordIndex]; if(deleting){charIndex--;typed.textContent=word.slice(0,charIndex);if(charIndex<=0){deleting=false;wordIndex=(wordIndex+1)%words.length;setTimeout(typeLoop,350);return;}}else{const next=words[wordIndex];charIndex++;typed.textContent=next.slice(0,charIndex);if(charIndex>=next.length){deleting=true;setTimeout(typeLoop,1500);return;}}setTimeout(typeLoop,deleting?45:75); }
 setTimeout(typeLoop,1800);
 const menuToggle=document.getElementById('menuToggle'), nav=document.getElementById('nav');
+const themeToggle=document.getElementById('themeToggle'), themeIcon=document.getElementById('themeIcon');
+themeToggle?.addEventListener('click',()=>{const light=document.body.classList.toggle('light-mode');if(themeIcon)themeIcon.textContent=light?'☀':'☾';themeToggle.setAttribute('aria-label',light?'Switch to dark mode':'Switch to light mode');});
 menuToggle?.addEventListener('click',()=>nav.classList.toggle('open'));
 nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
 const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target);}}),{threshold:.12});
