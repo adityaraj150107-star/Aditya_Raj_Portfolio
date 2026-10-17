@@ -1,33 +1,65 @@
-# Aditya Raj — Portfolio Website
+<div align="center">
 
-A responsive developer portfolio inspired by the reference site's dark, minimal, technical presentation, with original styling and content for Aditya Raj.
+# 🌐 Aditya Raj — Developer Portfolio
 
-## Preview locally
+### Personal portfolio built with HTML, CSS, and JavaScript
 
-**Fastest:** double-click `index.html` to open it in Chrome.
+A responsive website presenting my developer profile, technical skills, projects, and contact links.
 
-**Recommended (VS Code / PowerShell):** open this folder in VS Code, open a terminal here, and run:
+[![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-Visit-0891b2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://adityaraj150107-star.github.io/Aditya_Raj_Portfolio/)
+[![GitHub](https://img.shields.io/badge/Source%20Code-GitHub-312e81?style=for-the-badge&logo=github&logoColor=white)](https://github.com/adityaraj150107-star/Aditya_Raj_Portfolio)
 
-```powershell
-py -m http.server 8000
-```
+</div>
 
-Then open `http://localhost:8000` in your browser. Press `Ctrl+C` to stop the server.
+---
 
-## Put it online with GitHub Pages
+## ✨ About
 
-1. Create a GitHub repository (for example, `aditya-raj-portfolio`).
-2. Upload the contents of this folder to the repository root (`index.html`, `style.css`, `script.js`, etc.).
-3. Open **Settings → Pages**.
-4. Under Build and deployment, select **Deploy from a branch**, choose `main` and `/ (root)`, then Save.
-5. Wait for GitHub Pages to publish the site. The URL will appear in the Pages settings.
+This is my personal developer portfolio. It is built with standard web technologies and does not require a JavaScript framework or a build step.
 
-## Personalize before publishing
+## 🛠️ Built With
 
-- Name is set to **Aditya Raj**.
-- GitHub links point to `https://github.com/adityaraj150107-star`.
-- Project cards are descriptions of project work/concepts; replace the profile links with direct repository URLs when available.
-- No email address, phone number, LinkedIn profile, or resume file has been invented. Add them when ready.
-- The profile avatar is a designed initials badge (`AR`), not a real photograph.
+- **HTML5** — page structure
+- **CSS3** — styling, layout, and responsive presentation
+- **JavaScript** — interactive behaviour
 
-Built with HTML, CSS, and vanilla JavaScript. No build step or package installation required.
+## 🚀 Run Locally
+
+1. Clone the repository:
+
+   ~~~bash
+   git clone https://github.com/adityaraj150107-star/Aditya_Raj_Portfolio.git
+   cd Aditya_Raj_Portfolio
+   ~~~
+
+2. Open index.html directly in your browser, or start a local server from the project folder:
+
+   ~~~powershell
+   py -m http.server 8000
+   ~~~
+
+3. Visit [http://localhost:8000](http://localhost:8000).
+
+Press Ctrl+C in the terminal to stop the local server.
+
+## 🌍 Live Website
+
+The portfolio is published using GitHub Pages:
+
+**[adityaraj150107-star.github.io/Aditya_Raj_Portfolio](https://adityaraj150107-star.github.io/Aditya_Raj_Portfolio/)**
+
+If you update the source, check the repository's **Settings → Pages** to confirm the publishing branch and deployment status.
+
+## 📬 Contact
+
+- **Email:** [adityaraj150107@gmail.com](mailto:adityaraj150107@gmail.com)
+- **Instagram:** [@adityarajput._.05](https://www.instagram.com/adityarajput._.05/)
+- **GitHub:** [@adityaraj150107-star](https://github.com/adityaraj150107-star)
+
+## 👨‍💻 Author
+
+**Aditya Raj**
+
+---
+
+*Thanks for visiting. Feedback and suggestions are welcome.*
