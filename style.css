@@ -520,3 +520,48 @@ body.dark-mode .topbar nav{background:#11151E!important}
  .topbar nav{left:auto;right:24px;width:320px}
  .menu-toggle{display:inline-flex!important}
 }
+
+
+/* Match the reference portfolio's warm gold/orange visual palette */
+:root{--bg:#0c0b09;--panel:#17130d;--panel2:#21190d;--text:#fff8e8;--muted:#c0b39a;--line:rgba(255,183,3,.22);--purple:#ffb703;--blue:#ffcf5a;--pink:#ffd166;--green:#ffc145;--accent:#ffb703;--accent-soft:rgba(255,183,3,.14)}
+body{background:var(--bg);color:var(--text)}
+.ambient-one{background:#ffb703!important;opacity:.12!important}
+.ambient-two{background:#ff7b00!important;opacity:.1!important}
+.brand-mark{border-color:#ffb703!important;background:linear-gradient(135deg,#ffb703,#fb8500)!important;box-shadow:0 0 22px #ffb70330!important}
+.brand-mark span,.muted{color:#fff0c2!important}
+.gradient-text{background:linear-gradient(100deg,#ffb703 0%,#ffd166 55%,#fb8500 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important}
+.button-primary{background:linear-gradient(105deg,#ffb703,#fb8500)!important;color:#211500!important;box-shadow:0 10px 28px #ffb70326!important}
+.button-ghost{border-color:#57421b!important;background:#17130d!important;color:#fff3d1!important}
+.button-ghost:hover{border-color:#ffb703!important}
+.eyebrow,.mono,.home-contact-icon,.project-link,.expertise-project-link,.contact-icon{color:#ffbd24!important}
+.status-dot,.available i,.project-status i{background:#ffc145!important;box-shadow:0 0 12px #ffc14566!important}
+.profile-card{border-color:#5b451c!important;background:linear-gradient(145deg,rgba(39,29,12,.97),rgba(17,14,9,.98))!important;box-shadow:0 30px 90px #0008,0 0 55px #ffb70315!important}
+.avatar{background:linear-gradient(140deg,#ffb703,#fb8500 70%,#ffd166)!important;box-shadow:0 0 0 7px #ffb7031a,0 0 45px #ffb70330!important}
+.avatar-ring{border-color:#ffcf5a66!important}
+.topbar{background:rgba(12,11,9,.9)!important;border-color:rgba(255,183,3,.2)!important}
+.nav-link:hover,.nav-link.active{color:#ffca45!important}
+.expertise-card,.project-card,.journey-card,.resume-panel,.skill-item,.skill-group,.contact-card,.contact-panel{border-color:rgba(255,183,3,.18)!important}
+.feature-icon.purple,.feature-icon.blue{color:#ffbd24!important;background:rgba(255,183,3,.12)!important}
+.project-tags span,.mini-tags span{background:#241b0b!important;color:#ffe0a0!important;border-color:#5b4218!important}
+.back-top,.contact-submit{background:linear-gradient(105deg,#ffb703,#fb8500)!important;color:#211500!important}
+.theme-toggle,.menu-toggle{color:#ffbd24!important;border-color:rgba(255,183,3,.28)!important}
+body.light-mode{
+ --bg:#fffaf0;--panel:#ffffff;--panel2:#fff3d7;--text:#271b08;--muted:#756344;--line:rgba(196,126,0,.22);
+ --purple:#b87900;--blue:#d99000;--pink:#e8a000;--green:#b87900;--accent:#b87900;--accent-soft:rgba(232,160,0,.12);
+ background:#fffaf0!important;color:#271b08!important
+}
+body.light-mode .topbar{background:rgba(255,250,240,.96)!important;border-color:rgba(196,126,0,.2)!important}
+body.light-mode .brand,body.light-mode .nav-link,body.light-mode .welcome,body.light-mode .hero h1,body.light-mode .typed-line,body.light-mode .section-heading h2,body.light-mode .section-heading p,body.light-mode .hero-description,body.light-mode .profile-card h2,body.light-mode .role,body.light-mode .project-content h3,body.light-mode .project-content p,body.light-mode .contact-panel h2,body.light-mode .contact-panel p,body.light-mode .footer{color:#271b08!important}
+body.light-mode .profile-card,body.light-mode .expertise-card,body.light-mode .project-card,body.light-mode .journey-card,body.light-mode .resume-panel,body.light-mode .skill-item,body.light-mode .skill-group,body.light-mode .contact-card,body.light-mode .contact-panel{background:#fff!important;color:#271b08!important;border-color:rgba(196,126,0,.2)!important}
+body.light-mode .profile-card{background:linear-gradient(145deg,#fff,#fff4d9)!important}
+body.light-mode .project-visual,body.light-mode .placement-visual,body.light-mode .network-visual,body.light-mode .school-visual{background:#fff1cf!important}
+body.light-mode .button-ghost{background:#fff!important;color:#271b08!important;border-color:#e7cf9b!important}
+body.light-mode .mini-tags span,body.light-mode .project-tags span{background:#fff4d9!important;color:#795000!important;border-color:#f0d59b!important}
+body.light-mode .topbar nav{background:#fffaf0!important}
+body.light-mode .topbar nav .nav-link{color:#271b08!important}
+body.light-mode .contact-form input,body.light-mode .contact-form textarea{background:#fffaf0!important;color:#271b08!important;border-color:#e8d6ad!important}
+body.dark-mode{--bg:#0c0b09;--panel:#17130d;--panel2:#21190d;--text:#fff8e8;--muted:#c0b39a;--line:rgba(255,183,3,.22);--purple:#ffb703;--blue:#ffcf5a;--pink:#ffd166;--green:#ffc145;--accent:#ffb703;--accent-soft:rgba(255,183,3,.14);background:#0c0b09!important;color:#fff8e8!important}
+body.dark-mode .topbar nav{background:#17130d!important}
+body.dark-mode .topbar nav .nav-link{color:#fff8e8!important}
+body.dark-mode .profile-card,body.dark-mode .expertise-card,body.dark-mode .project-card,body.dark-mode .journey-card,body.dark-mode .resume-panel,body.dark-mode .skill-item,body.dark-mode .skill-group,body.dark-mode .contact-card,body.dark-mode .contact-panel{background:#17130d!important;color:#fff8e8!important;border-color:rgba(255,183,3,.22)!important}
+body.dark-mode .contact-form input,body.dark-mode .contact-form textarea{background:#100e0a!important;color:#fff8e8!important;border-color:#57421b!important}
