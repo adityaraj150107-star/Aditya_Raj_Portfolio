@@ -159,3 +159,13 @@ body.light-mode .contact-form input,body.light-mode .contact-form textarea{backg
 body.light-mode .contact-form input::placeholder,body.light-mode .contact-form textarea::placeholder{color:#64748b}
 body.light-mode .contact-layout .social-icons a{background:#111;color:#fff}
 body.light-mode .footer{color:#334155}
+
+/* Compact, friend-inspired section navigation */
+#nav{gap:clamp(12px,2.1vw,28px)}
+.nav-link{white-space:nowrap;font-size:clamp(11px,.95vw,13px)}
+#projects .section-heading{justify-content:center;text-align:center}
+#projects .projects-grid{max-width:1000px;margin-inline:auto}
+#resume .resume-panel{display:flex;align-items:center;justify-content:space-between;gap:28px}
+#resume .resume-actions{display:flex;gap:12px;flex-wrap:wrap}
+#journey{display:none!important}
+@media(max-width:760px){#nav{gap:12px}.nav-link{white-space:normal;font-size:13px}#resume .resume-panel{display:block}#resume .resume-actions{margin-top:18px}}
