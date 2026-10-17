@@ -100,3 +100,62 @@ body{background:#111;color:#fff8ef}.ambient-one,.ambient-two{background:#ff7900;
 .contact-form-note{font-size:.78rem;color:#aaa;text-align:center;margin:0}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(max-width:760px){.projects-grid-two,.contact-layout{grid-template-columns:1fr}.contact-card{padding:1.5rem}.contact-heading{margin-bottom:1.5rem}.project-image-link{aspect-ratio:16/10}}
+
+
+/* Reference-inspired black and orange theme, responsive controls, and light mode */
+:root{--bg:#121212;--panel:#252525;--panel2:#1a1a1a;--text:#fffaf0;--muted:#94a3b8;--line:rgba(255,122,0,.18);--purple:#ff7a00;--blue:#ff9a3c;--pink:#ff7a00;--green:#ffb15c;--max:1160px;--accent:#ff7a00}
+body{background:var(--bg);color:var(--text);transition:background .3s ease,color .3s ease}
+.ambient-one,.ambient-two{background:#ff7a00;opacity:.08}
+.topbar{max-width:none;padding:0 max(24px,calc((100% - var(--max))/2 + 24px));background:rgba(18,18,18,.94);border-bottom:1px solid rgba(255,122,0,.22)}
+.brand-mark{border-color:#ff7a00;background:#1c1c1c;box-shadow:0 0 22px #ff7a0020}
+.brand-mark span,.muted,.top-cta span{color:#ff7a00}
+.nav-link{font-size:13px;color:#c1c1c1}
+.nav-link:hover,.nav-link.active{color:#ff7a00}
+.top-cta{border-color:#ff7a00;border-radius:8px}
+.top-cta:hover{background:#ff7a00;color:#fff}
+.topbar-actions{display:flex;align-items:center;gap:12px}
+.theme-toggle{width:40px;height:40px;display:grid;place-items:center;border-radius:50%;border:1px solid rgba(255,122,0,.55);background:#252525;color:#ff9a3c;font-size:20px;cursor:pointer;transition:transform .2s,background .2s}
+.theme-toggle:hover{transform:rotate(-12deg);background:#332419}
+.eyebrow,.mono{color:#ffad5c}
+.status-dot,.available i,.project-status i{background:#ff7a00;box-shadow:0 0 12px #ff7a0066}
+.gradient-text{background:linear-gradient(100deg,#fffaf0 0%,#ff9a3c 60%,#ff7a00 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cursor{color:#ff7a00}
+.hero-description,.welcome{color:#c0c0c0}
+.button-primary{background:#ff7a00;color:#fff;box-shadow:0 10px 28px #ff7a002b}
+.button-primary:hover{background:#e96f00;box-shadow:0 12px 30px #ff7a0038}
+.button-ghost{border-color:#ff7a00;background:#202020;color:#fff}
+.button-ghost:hover{border-color:#ff9a3c;color:#ff9a3c}
+.social-row,.social-row a{color:#c3c3c3}
+.social-divider{background:#555}
+.profile-card{border-color:#ff7a00;background:linear-gradient(145deg,#2c2c2c,#191919);box-shadow:0 30px 90px #0008,0 0 55px #ff7a001b}
+.avatar-ring{border-color:#ff7a00}
+.floating-chip{border-color:#6a421f;background:#211b16;color:#fff}
+.section-heading h2,.section-heading h3{color:#fffaf0}
+.expertise-card,.project-card,.journey-card,.resume-panel,.skill-item{background:#252525;border-color:#ff7a00}
+.project-card{border:1px solid #ff7a00;border-radius:17px}
+.project-card:hover{border-color:#ffad5c;box-shadow:0 18px 45px #ff7a0017}
+.project-meta,.project-tags span{color:#ffbd7d}
+.project-tags span{border-color:#71451f;background:#211b16}
+.project-link,.text-link{color:#ff9a3c}
+.skill-item{border-color:rgba(255,122,0,.5);border-left-color:#ff7a00}
+.skill-item:hover{background:#303030;box-shadow:0 14px 28px #ff79001a,0 0 0 1px #ff79004d}
+.footer{border-color:rgba(255,122,0,.25)}
+.back-top{background:#ff7a00;color:#fff}
+.contact-card{background:#252525;border-color:#ff7a00}
+.contact-form input,.contact-form textarea{border-color:rgba(255,121,0,.3)}
+.contact-form input:focus,.contact-form textarea:focus{border-color:#ff7a00;box-shadow:0 0 0 3px rgba(255,121,0,.12)}
+@media(max-width:760px){.topbar{padding:0 18px}.topbar-actions{margin-left:auto;margin-right:10px}.topbar nav{background:#1b1b1b;border:1px solid #ff7a00;border-radius:12px;padding:14px}.menu-toggle{color:#ff7a00}}
+body.light-mode{--bg:#f8fafc;--panel:#fff;--panel2:#f1f5f9;--text:#111827;--muted:#64748b;--line:rgba(255,122,0,.2);background:#f8fafc;color:#111827}
+body.light-mode .topbar{background:rgba(248,250,252,.94);border-bottom-color:rgba(255,122,0,.22)}
+body.light-mode .brand,body.light-mode .nav-link,body.light-mode .section-heading h2,body.light-mode .section-heading h3,body.light-mode .contact-intro h3{color:#111827}
+body.light-mode .nav-link:hover,body.light-mode .nav-link.active{color:#e96f00}
+body.light-mode .welcome,body.light-mode .hero-description,body.light-mode .social-row,body.light-mode .social-row a{color:#475569}
+body.light-mode .profile-card,body.light-mode .expertise-card,body.light-mode .project-card,body.light-mode .journey-card,body.light-mode .resume-panel,body.light-mode .skill-item,body.light-mode .contact-card{background:#fff;color:#111827}
+body.light-mode .profile-card{background:linear-gradient(145deg,#fff,#f1f5f9)}
+body.light-mode .card-top{border-color:#e2e8f0}
+body.light-mode .button-ghost{background:#fff;color:#111827}
+body.light-mode .project-content p,body.light-mode .contact-intro>p,body.light-mode .contact-details>a,body.light-mode .contact-location{color:#334155}
+body.light-mode .contact-form input,body.light-mode .contact-form textarea{background:#f8fafc;color:#111827}
+body.light-mode .contact-form input::placeholder,body.light-mode .contact-form textarea::placeholder{color:#64748b}
+body.light-mode .contact-layout .social-icons a{background:#111;color:#fff}
+body.light-mode .footer{color:#334155}
