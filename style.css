@@ -169,3 +169,12 @@ body.light-mode .footer{color:#334155}
 #resume .resume-actions{display:flex;gap:12px;flex-wrap:wrap}
 #journey{display:none!important}
 @media(max-width:760px){#nav{gap:12px}.nav-link{white-space:normal;font-size:13px}#resume .resume-panel{display:block}#resume .resume-actions{margin-top:18px}}
+
+/* Match the requested reference navbar exactly */
+.topbar{display:flex;align-items:center}
+#nav{display:flex;align-items:center;justify-content:center;gap:clamp(18px,3vw,36px);margin-left:auto}
+#nav .nav-link{font-size:14px;font-weight:700;white-space:nowrap;color:#f7f7f7}
+#nav .nav-link:hover,#nav .nav-link.active{color:#ff7900}
+.topbar-actions{display:flex;align-items:center;gap:12px;margin-left:20px}
+.theme-toggle{flex:0 0 auto;width:38px;height:38px;border:0;background:transparent;color:#fff;font-size:23px;display:grid;place-items:center;cursor:pointer}
+@media(max-width:760px){#nav{gap:12px;margin-left:auto}#nav .nav-link{font-size:12px}.topbar-actions{margin-left:8px}.top-cta{display:none}.theme-toggle{width:30px}}
