@@ -224,3 +224,11 @@ body[data-active-section] main section{animation:sectionEnter .48s ease both}
 .expertise-card:hover,.skill-item:hover,.resume-actions .button:hover{transform:translateY(-6px)}
 .project-card:hover,.contact-card:hover{transform:translateY(-4px)}
 @media(prefers-reduced-motion:reduce){body[data-active-section] main section{animation:none}.reveal,.expertise-card,.project-card,.skill-item,.contact-card,.resume-actions .button{transition:none}}
+
+
+/* Home contact details: orange email and location icons */
+.home-contact-details{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin-top:24px}
+.home-contact-item{display:flex;align-items:center;gap:11px;color:var(--text,inherit);text-decoration:none;font-size:.95rem;transition:color .25s ease,transform .25s ease}
+.home-contact-item:hover{color:#ff7900;transform:translateX(4px)}
+.home-contact-icon{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;color:#ff7900;font-size:1.2rem;flex-shrink:0}
+.home-contact-icon svg{display:block}
