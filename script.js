@@ -5,9 +5,10 @@ function typeLoop(){ if(!typed) return; const word=words[wordIndex]; if(deleting
 setTimeout(typeLoop,1800);
 const menuToggle=document.getElementById('menuToggle'), nav=document.getElementById('nav');
 const themeToggle=document.getElementById('themeToggle'), themeIcon=document.getElementById('themeIcon');
-themeToggle?.addEventListener('click',()=>{const light=document.body.classList.toggle('light-mode');if(themeIcon)themeIcon.textContent=light?'☀':'☾';themeToggle.setAttribute('aria-label',light?'Switch to dark mode':'Switch to light mode');});
-menuToggle?.addEventListener('click',()=>nav.classList.toggle('open'));
-nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+themeToggle?.addEventListener('click',()=>{const light=document.body.classList.toggle('light-mode');document.body.classList.toggle('dark-mode',!light);if(themeIcon)themeIcon.textContent=light?'☀':'☾';themeToggle.setAttribute('aria-label',light?'Switch to dark mode':'Switch to light mode');});
+menuToggle?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'✕':'☰';});
+nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuToggle?.setAttribute('aria-expanded','false');if(menuToggle)menuToggle.textContent='☰';}));
+document.addEventListener('click',event=>{if(nav?.classList.contains('open')&&!nav.contains(event.target)&&!menuToggle?.contains(event.target)){nav.classList.remove('open');menuToggle?.setAttribute('aria-expanded','false');if(menuToggle)menuToggle.textContent='☰';}});
 const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target);}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
 const sections=[...document.querySelectorAll('main section[id]')];
