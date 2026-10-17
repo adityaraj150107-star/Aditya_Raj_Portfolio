@@ -663,3 +663,23 @@ body.dark-mode .contact-form input,body.dark-mode .contact-form textarea{backgro
  .avatar-photo{width:245px!important;height:255px!important;max-width:100%!important;object-fit:cover!important;object-position:center 18%!important}
  .profile-card .floating-chip,.hero-art .orbit,.hero-art .art-caption{display:none!important}
 }
+
+
+/* Colourful technical skills: preserve gold portfolio theme, give each tech its own accent */
+.skills-title h2 span{color:#ffb703!important}
+.skill-item{
+ background:linear-gradient(145deg,rgba(255,183,3,.055),rgba(255,255,255,.018))!important;
+ border:1px solid rgba(255,183,3,.28)!important;
+ transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease!important;
+}
+.skill-item:hover{transform:translateY(-4px)!important;border-color:#ffb703!important;box-shadow:0 9px 25px rgba(255,183,3,.12)!important}
+.tech-icon{display:inline-grid!important;place-items:center;flex:0 0 34px;width:34px;height:34px;border-radius:9px;font-weight:800!important;font-size:17px!important;background:color-mix(in srgb,var(--skill-color) 15%,transparent)!important;color:var(--skill-color)!important;border:1px solid color-mix(in srgb,var(--skill-color) 35%,transparent)!important}
+.icon-c{--skill-color:#4f9cff}.icon-python{--skill-color:#ffd343}.icon-java{--skill-color:#f89820}.icon-design{--skill-color:#e879f9}
+.icon-html{--skill-color:#f06529}.icon-css{--skill-color:#2965f1}.icon-ml{--skill-color:#b58cff}.icon-ai{--skill-color:#ffb703}
+.icon-dl{--skill-color:#22c55e}.icon-tf{--skill-color:#ff8f00}.icon-keras{--skill-color:#d00000}.icon-ux{--skill-color:#f472b6}
+.icon-js{--skill-color:#f7df1e}.icon-nlp{--skill-color:#f9a8d4}.icon-flask{--skill-color:#e5e7eb}.icon-fastapi{--skill-color:#00c7a5}.icon-docker{--skill-color:#2496ed}
+.icon-sqlite{--skill-color:#74b9ff}.icon-sql{--skill-color:#ff9d4d}.icon-cpp{--skill-color:#659ad2}.icon-streamlit{--skill-color:#ff4b4b}
+body.light-mode .skill-item{background:#fff!important;border-color:rgba(196,126,0,.2)!important;box-shadow:0 3px 14px rgba(55,40,10,.04)}
+body.light-mode .skill-item:hover{box-shadow:0 8px 22px rgba(196,126,0,.12)!important}
+body.dark-mode .skill-item{background:linear-gradient(145deg,#17130d,#100e0a)!important;border-color:rgba(255,183,3,.23)!important}
+@media(max-width:760px){.skill-item{min-height:56px!important}.tech-icon{flex-basis:30px;width:30px;height:30px;font-size:15px!important}}
