@@ -14,3 +14,21 @@ sections.forEach(section=>navObserver.observe(section));
 const backTop=document.getElementById('backTop');window.addEventListener('scroll',()=>backTop.classList.toggle('show',window.scrollY>450));backTop?.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 document.getElementById('year').textContent=new Date().getFullYear();
 document.getElementById('copyProfile')?.addEventListener('click',async()=>{const message=document.getElementById('copyMessage');try{await navigator.clipboard.writeText('https://github.com/adityaraj150107-star');message.textContent='GitHub profile link copied!';}catch{message.textContent='GitHub: github.com/adityaraj150107-star';}});
+
+
+// Contact form: prepare an email draft in the visitor's default mail app.
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (!contactForm.reportValidity()) return;
+    const formData = new FormData(contactForm);
+    const subject = encodeURIComponent(String(formData.get('subject') || 'Portfolio contact'));
+    const body = encodeURIComponent(
+      'Name: ' + formData.get('name') + '\\n' +
+      'Email: ' + formData.get('email') + '\\n\\n' +
+      String(formData.get('message') || '')
+    );
+    window.location.href = 'mailto:adityaraj150107@gmail.com?subject=' + subject + '&body=' + body;
+  });
+}
