@@ -270,3 +270,63 @@ body.light-mode .contact-card,body.light-mode .project-card,body.light-mode .exp
 body.dark-mode,body:not(.light-mode):not([data-theme="light"]){--purple:#A78BFA;--blue:#C4B5FD}
 body.dark-mode .button-primary,body:not(.light-mode):not([data-theme="light"]) .button-primary{background:#7C3AED!important}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+
+/* FINAL THEME FIX — lavender light mode + purple accent */
+:root{
+  --bg:#E6E6FA; --panel:#FFFFFF; --panel2:#F5F3FF;
+  --text:#241B35; --muted:#655B78; --line:rgba(83,55,130,.17);
+  --purple:#7C3AED; --blue:#8B5CF6; --pink:#A78BFA; --green:#7C3AED;
+}
+body.light-mode{
+  --bg:#E6E6FA;--panel:#FFFFFF;--panel2:#F5F3FF;
+  --text:#241B35;--muted:#655B78;--line:rgba(83,55,130,.17);
+  --purple:#7C3AED;--blue:#8B5CF6;--pink:#A78BFA;--green:#7C3AED;
+  background:#E6E6FA!important;color:#241B35!important;
+}
+body.light-mode .topbar{background:rgba(230,230,250,.94)!important;border-color:rgba(83,55,130,.17)!important}
+body.light-mode .topbar nav{background:#F5F3FF}
+body.light-mode .nav-link,body.light-mode .brand,body.light-mode .welcome,
+body.light-mode .hero h1,body.light-mode .typed-line,body.light-mode .section-heading h2,
+body.light-mode .section-heading p,body.light-mode .hero-description,
+body.light-mode .profile-card h2,body.light-mode .role,body.light-mode .project-content h3,
+body.light-mode .project-content p,body.light-mode .contact-panel h2,
+body.light-mode .contact-panel p,body.light-mode .footer{color:#241B35!important}
+body.light-mode .nav-link:hover,body.light-mode .nav-link.active{color:#7C3AED!important}
+body.light-mode .profile-card,body.light-mode .expertise-card,body.light-mode .project-card,
+body.light-mode .journey-card,body.light-mode .resume-panel,body.light-mode .skill-item,
+body.light-mode .skill-group,body.light-mode .contact-card,body.light-mode .contact-panel{
+ background:#FFFFFF!important;color:#241B35!important;border-color:rgba(83,55,130,.18)!important;
+ box-shadow:0 12px 38px rgba(60,35,100,.08);
+}
+body.light-mode .profile-card{background:linear-gradient(145deg,#FFFFFF,#F5F3FF)!important}
+body.light-mode .project-visual,body.light-mode .placement-visual,body.light-mode .network-visual,
+body.light-mode .school-visual{background:#F0EAFE!important}
+body.light-mode .mock-main,body.light-mode .dashboard-mock,body.light-mode .school-ui,
+body.light-mode .skill-group{background:#F8F6FF!important}
+body.light-mode .mini-tags span,body.light-mode .project-tags span{
+ background:#F5F3FF!important;color:#53358A!important;border-color:rgba(124,58,237,.2)!important
+}
+body.light-mode .button-ghost{background:#FFFFFF!important;color:#241B35!important;border-color:rgba(124,58,237,.35)!important}
+body.light-mode .button-primary,body.light-mode .contact-submit{
+ background:#7C3AED!important;color:#FFFFFF!important;border-color:#7C3AED!important;
+ box-shadow:0 8px 24px rgba(124,58,237,.22)!important
+}
+body.light-mode .brand-mark{background:linear-gradient(135deg,#7C3AED,#A78BFA)!important;color:#fff!important}
+body.light-mode .gradient-text{background:linear-gradient(100deg,#7C3AED,#A78BFA)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important}
+body.light-mode .home-contact-icon,body.light-mode .home-contact-item:hover,
+body.light-mode .project-link,body.light-mode .eyebrow{color:#7C3AED!important}
+body.light-mode .contact-form input,body.light-mode .contact-form textarea{
+ background:#F8F6FF!important;color:#241B35!important;border-color:rgba(124,58,237,.2)!important
+}
+body.light-mode .contact-form input::placeholder,body.light-mode .contact-form textarea::placeholder{color:#786B8E!important}
+body.light-mode .footer{border-color:rgba(83,55,130,.17)!important}
+body.light-mode .back-top{background:#7C3AED!important;color:#fff!important;border-color:#7C3AED!important}
+body.dark-mode{
+ --bg:#090D18;--panel:#101726;--panel2:#0D1422;--text:#F2F5FF;
+ --muted:#8F9AB0;--line:rgba(154,174,211,.14);--purple:#A78BFA;
+ --blue:#62A6FF;--pink:#F28BC8;--green:#65E6BB;
+ background:#090D18!important;color:#F2F5FF!important;
+}
+body.dark-mode .topbar{background:rgba(9,13,24,.88)!important}
+body.dark-mode .button-primary{background:linear-gradient(105deg,#7C3AED,#8B5CF6)!important}
