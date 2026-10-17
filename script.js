@@ -34,3 +34,32 @@ if (contactForm) {
     window.location.href = 'mailto:adityaraj150107@gmail.com?subject=' + subject + '&body=' + body;
   });
 }
+
+
+// Section navigation: show only the selected page-like section.
+const homeSections = ['home', 'expertise', 'skills'];
+function showPortfolioSection(sectionId) {
+  document.body.dataset.activeSection = sectionId;
+  document.querySelectorAll('#nav .nav-link').forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === '#' + sectionId);
+  });
+  const target = document.getElementById(sectionId);
+  if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+nav?.querySelectorAll('a.nav-link').forEach(link => {
+  link.addEventListener('click', event => {
+    const id = link.getAttribute('href')?.slice(1);
+    if (!id) return;
+    event.preventDefault();
+    showPortfolioSection(id === 'expertise' || id === 'skills' ? 'home' : id);
+    history.replaceState(null, '', '#' + (id === 'expertise' || id === 'skills' ? 'home' : id));
+  });
+});
+document.querySelectorAll('a[href="#contact"]').forEach(link => link.addEventListener('click', event => {
+  if (link.closest('#nav')) return;
+  event.preventDefault();
+  showPortfolioSection('contact');
+  history.replaceState(null, '', '#contact');
+}));
+const initialSection = location.hash.slice(1);
+document.body.dataset.activeSection = ['resume','projects','contact'].includes(initialSection) ? initialSection : 'home';
