@@ -189,3 +189,38 @@ body.light-mode .footer{color:#334155}
 body.light-mode .contact-form-note{color:#64748b}
 body.light-mode .contact-layout .social-icons a:hover{background:#ff7900;color:#111}
 @media(max-width:760px){#resume .resume-panel{display:flex;align-items:center}#resume .resume-actions{margin-top:0;flex-direction:column}#resume .resume-actions .button{width:100%}}
+
+
+/* Page-like navigation: each tab shows only its own content. */
+body[data-active-section="home"] main #resume,
+body[data-active-section="home"] main #projects,
+body[data-active-section="home"] main #contact {display:none}
+body[data-active-section="resume"] main #home,
+body[data-active-section="resume"] main #expertise,
+body[data-active-section="resume"] main #skills,
+body[data-active-section="resume"] main #projects,
+body[data-active-section="resume"] main #contact {display:none}
+body[data-active-section="projects"] main #home,
+body[data-active-section="projects"] main #expertise,
+body[data-active-section="projects"] main #skills,
+body[data-active-section="projects"] main #resume,
+body[data-active-section="projects"] main #contact {display:none}
+body[data-active-section="contact"] main #home,
+body[data-active-section="contact"] main #expertise,
+body[data-active-section="contact"] main #skills,
+body[data-active-section="contact"] main #resume,
+body[data-active-section="contact"] main #projects {display:none}
+body[data-active-section="home"] main #home,
+body[data-active-section="home"] main #expertise,
+body[data-active-section="home"] main #skills {display:block}
+body[data-active-section="home"] main #home{display:grid}
+body[data-active-section="resume"] main #resume,
+body[data-active-section="projects"] main #projects,
+body[data-active-section="contact"] main #contact {display:block}
+body[data-active-section] main section{animation:sectionEnter .48s ease both}
+@keyframes sectionEnter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.reveal{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.75,.25,1)}
+.expertise-card,.project-card,.skill-item,.contact-card,.resume-actions .button{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.expertise-card:hover,.skill-item:hover,.resume-actions .button:hover{transform:translateY(-6px)}
+.project-card:hover,.contact-card:hover{transform:translateY(-4px)}
+@media(prefers-reduced-motion:reduce){body[data-active-section] main section{animation:none}.reveal,.expertise-card,.project-card,.skill-item,.contact-card,.resume-actions .button{transition:none}}
