@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">SmartPlacementPredictions AI project</title><desc id="d">A glowing neural brain and placement analytics dashboard in a dark orange and blue technology scene.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#080b16"/><stop offset=".55" stop-color="#101a30"/><stop offset="1" stop-color="#24140b"/></linearGradient>
+ <linearGradient id="orange"><stop stop-color="#ffb02e"/><stop offset="1" stop-color="#ff6500"/></linearGradient>
+ <linearGradient id="blue"><stop stop-color="#51e5ff"/><stop offset="1" stop-color="#456dff"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#345078" stroke-opacity=".24"/></pattern>
+</defs>
+<rect width="1200" height="675" rx="30" fill="url(#bg)"/><rect width="1200" height="675" rx="30" fill="url(#grid)"/>
+<circle cx="340" cy="280" r="190" fill="#087dff" opacity=".12" filter="url(#glow)"/>
+<g transform="translate(105 125)" stroke="#58cfff" stroke-width="4" fill="none" filter="url(#glow)">
+ <path d="M150 30C90 4 45 65 70 112C20 160 66 225 112 222C120 275 185 280 208 236C263 246 292 190 263 151C300 95 244 35 201 56C185 22 164 18 150 30Z" opacity=".9"/>
+ <path d="M165 38L142 90 185 115 135 160 160 225M90 90L142 90 115 135 185 115 255 88M72 160L115 135 135 160 210 185 263 151M112 222L135 160 160 225 210 185 208 236" stroke-width="3"/>
+ <g fill="#a6f4ff" stroke="none"><circle cx="150" cy="30" r="7"/><circle cx="70" cy="112" r="7"/><circle cx="142" cy="90" r="7"/><circle cx="185" cy="115" r="7"/><circle cx="135" cy="160" r="7"/><circle cx="210" cy="185" r="7"/><circle cx="208" cy="236" r="7"/><circle cx="263" cy="151" r="7"/></g>
+</g>
+<g transform="translate(560 95)">
+ <rect x="0" y="0" width="570" height="420" rx="24" fill="#101827" stroke="#ff9229" stroke-width="3"/>
+ <rect x="20" y="22" width="530" height="48" rx="10" fill="#1b2940"/><circle cx="45" cy="46" r="6" fill="#ff8b16"/><text x="68" y="53" fill="#fff" font-family="Arial" font-size="21" font-weight="700">PLACEMENT PREDICTION DASHBOARD</text>
+ <rect x="22" y="90" width="230" height="180" rx="14" fill="#17243a" stroke="#31445f"/><text x="42" y="120" fill="#dbe9ff" font-family="Arial" font-size="19">Placement Probability</text>
+ <circle cx="135" cy="193" r="52" fill="none" stroke="#263b58" stroke-width="16"/><circle cx="135" cy="193" r="52" fill="none" stroke="url(#orange)" stroke-width="16" stroke-dasharray="278 327" transform="rotate(-90 135 193)"/><text x="135" y="202" text-anchor="middle" fill="#fff" font-family="Arial" font-size="34" font-weight="700">85%</text>
+ <rect x="270" y="90" width="280" height="180" rx="14" fill="#17243a" stroke="#31445f"/><text x="290" y="120" fill="#dbe9ff" font-family="Arial" font-size="19">Prediction Trend</text><path d="M295 230L335 210 375 220 420 170 465 182 515 135" fill="none" stroke="#ff9a24" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M295 230L335 210 375 220 420 170 465 182 515 135V245H295Z" fill="#ff8b16" opacity=".13"/>
+ <rect x="22" y="290" width="528" height="105" rx="14" fill="#17243a" stroke="#31445f"/><text x="42" y="322" fill="#fff" font-family="Arial" font-size="19">SKILLS ANALYSIS</text>
+ <g font-family="Arial" font-size="15" fill="#d9e5f7"><text x="42" y="356">Python</text><text x="42" y="382">Machine Learning</text><text x="285" y="356">Data Analysis</text><text x="285" y="382">Communication</text></g>
+ <g fill="#263c59"><rect x="125" y="343" width="120" height="10" rx="5"/><rect x="125" y="369" width="120" height="10" rx="5"/><rect x="390" y="343" width="120" height="10" rx="5"/><rect x="390" y="369" width="120" height="10" rx="5"/></g>
+ <g fill="url(#orange)"><rect x="125" y="343" width="110" height="10" rx="5"/><rect x="125" y="369" width="98" height="10" rx="5"/><rect x="390" y="343" width="105" height="10" rx="5"/><rect x="390" y="369" width="112" height="10" rx="5"/></g>
+</g>
+<text x="70" y="535" fill="#ff9a28" font-family="Arial" font-size="24" font-weight="700" letter-spacing="4">AI / MACHINE LEARNING</text><text x="70" y="592" fill="#fff" font-family="Arial" font-size="43" font-weight="700">SmartPlacement<tspan fill="#ff8a13">Predictions</tspan></text>
+<text x="70" y="630" fill="#b9c8df" font-family="Arial" font-size="19">Predict smarter. Prepare better. Build your future.</text>
+</svg>
