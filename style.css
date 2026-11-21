@@ -683,3 +683,115 @@ body.light-mode .skill-item{background:#fff!important;border-color:rgba(196,126,
 body.light-mode .skill-item:hover{box-shadow:0 8px 22px rgba(196,126,0,.12)!important}
 body.dark-mode .skill-item{background:linear-gradient(145deg,#17130d,#100e0a)!important;border-color:rgba(255,183,3,.23)!important}
 @media(max-width:760px){.skill-item{min-height:56px!important}.tech-icon{flex-basis:30px;width:30px;height:30px;font-size:15px!important}}
+
+
+/* =========================================================
+   Reference-inspired finish: Hemang-style orange portfolio
+   Keep Aditya's content, links, projects and existing photo.
+   ========================================================= */
+:root{
+ --bg:#121212!important;--panel:#1b1b1b!important;--panel2:#171717!important;
+ --text:#fffaf0!important;--muted:#94a3b8!important;--line:rgba(255,122,0,.18)!important;
+ --purple:#ff7a00!important;--blue:#ff9a3c!important;--pink:#ffb36b!important;
+ --green:#ffad42!important;--accent:#ff7a00!important;--accent-glow:rgba(255,122,0,.3)!important;
+}
+html{scroll-behavior:smooth}
+body{background:#121212!important;color:#fffaf0!important}
+.ambient{background:#ff7a00!important;opacity:.08!important}
+.ambient-one{background:#ff7a00!important}.ambient-two{background:#ff9a3c!important}
+.topbar{background:rgba(18,18,18,.94)!important;border-bottom:1px solid rgba(255,122,0,.18)!important}
+.brand-mark{border-color:#ff7a00!important;background:#1d1d1d!important;box-shadow:0 0 22px rgba(255,122,0,.15)!important}
+.brand-mark span,.muted,.nav-link:hover,.nav-link.active{color:#ff7a00!important}
+.nav-link{color:#c2c2c2!important}
+.theme-toggle,.menu-toggle{color:#ff7a00!important}
+.eyebrow,.mono{color:#ffad66!important}
+.status-dot,.available i,.project-status i{background:#ff7a00!important;box-shadow:0 0 12px rgba(255,122,0,.5)!important}
+.welcome{color:#ff9a3c!important}
+.gradient-text{background:linear-gradient(100deg,#ff7a00,#ffb15c)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
+.typed-line{color:#fff1e3!important}.cursor{color:#ff7a00!important}
+.hero{grid-template-columns:minmax(0,1.08fr) minmax(320px,.92fr)!important;gap:clamp(38px,6vw,82px)!important;min-height:650px!important;padding-top:78px!important;padding-bottom:64px!important}
+.hero-copy{max-width:650px!important}
+.hero-description{color:#c0c0c0!important}
+.button-primary{background:#ff7a00!important;border-color:#ff7a00!important;color:#fff!important;box-shadow:0 9px 26px rgba(255,122,0,.2)!important}
+.button-primary:hover{background:transparent!important;color:#ff7a00!important}
+.button-ghost{border-color:#ff7a00!important;color:#ffad66!important;background:transparent!important}
+.button-ghost:hover{background:rgba(255,122,0,.08)!important;border-color:#ff9a3c!important}
+.home-contact-item,.home-contact-icon{color:#ffad66!important}
+.hero-art{min-height:480px!important;display:flex!important;align-items:center!important;justify-content:center!important}
+.hero-art .profile-card{
+ width:min(360px,88%)!important;min-height:0!important;height:420px!important;
+ padding:0!important;position:relative!important;overflow:visible!important;
+ background:transparent!important;border:0!important;border-radius:0!important;
+ box-shadow:none!important;transform:none!important;text-align:left!important;
+}
+.profile-card .card-top,.profile-card h2,.profile-card .role,.profile-card .card-line,
+.profile-card .profile-stats,.profile-card .floating-chip,.hero-art .orbit,
+.hero-art .art-caption{display:none!important}
+.avatar-wrap{
+ position:absolute!important;left:20px!important;top:0!important;
+ width:calc(100% - 20px)!important;height:390px!important;margin:0!important;
+ display:block!important;background:#ff7a00!important;border-radius:20px!important;
+}
+.avatar-glow,.avatar-ring{display:none!important}
+.avatar-photo{
+ position:absolute!important;left:-20px!important;top:-20px!important;
+ display:block!important;width:100%!important;height:100%!important;max-width:none!important;
+ object-fit:cover!important;object-position:center 18%!important;
+ border:2px solid #121212!important;border-radius:20px!important;
+ transform:none!important;box-shadow:none!important;background:#121212!important;
+}
+.avatar-photo:hover{transform:translate(-5px,-5px)!important}
+.section-block{padding-top:92px!important}
+.section-heading h2,.contact-panel h2,.skills-title h2{color:#fffaf0!important}
+.section-heading>p,.expertise-card p,.project-content p{color:#b5b5b5!important}
+.expertise-card,.project-card,.skill-group,.skill-item{
+ background:#1b1b1b!important;border:1px solid rgba(255,122,0,.22)!important;
+}
+.expertise-card{border-left:3px solid #ff7a00!important}
+.expertise-card:hover,.project-card:hover{border-color:#ff7a00!important;box-shadow:0 10px 30px rgba(255,122,0,.13)!important}
+.feature-icon,.card-index,.card-arrow{color:#ff9a3c!important}
+.feature-icon{background:rgba(255,122,0,.12)!important}
+.mini-tags span,.project-tags span{border-color:rgba(255,122,0,.28)!important;background:#211a14!important;color:#ffd0a6!important}
+.expertise-project-link,.project-link,.skills-title h2 span{color:#ff7a00!important}
+.skill-item{color:#fffaf0!important}
+.skill-item:hover{border-color:#ff7a00!important;box-shadow:0 8px 24px rgba(255,122,0,.12)!important}
+.tech-icon{--skill-color:#ff9a3c!important}
+.project-visual{background:#21180f!important}
+.placement-visual{background:radial-gradient(ellipse at 75% 20%,rgba(255,122,0,.22),transparent 48%),linear-gradient(135deg,#21180f,#171717 70%,#302014)!important}
+.mock-sidebar i{background:#ff7a00!important}.mock-chart span{background:linear-gradient(#ffad66,#ff7a00)!important}
+.contact-panel,.contact-form,.contact-info{border-color:rgba(255,122,0,.22)!important}
+input,textarea{accent-color:#ff7a00!important}
+input:focus,textarea:focus{border-color:#ff7a00!important;box-shadow:0 0 0 3px rgba(255,122,0,.12)!important}
+footer,.professional-footer{background:#121212!important;border-top:1px solid rgba(255,122,0,.22)!important}
+.social-icon,.social-links a{border-color:rgba(255,122,0,.4)!important;color:#ff9a3c!important}
+.social-icon:hover,.social-links a:hover{background:#ff7a00!important;color:#fff!important}
+.scroll-hint>span:last-child{color:#ff7a00!important}
+body.light-mode{background:#f8fafc!important;color:#0f172a!important}
+body.light-mode .topbar{background:rgba(248,250,252,.94)!important}
+body.light-mode .nav-link{color:#475569!important}
+body.light-mode .nav-link.active,body.light-mode .nav-link:hover{color:#ff7a00!important}
+body.light-mode .hero-description,body.light-mode .section-heading>p,
+body.light-mode .expertise-card p,body.light-mode .project-content p{color:#475569!important}
+body.light-mode .expertise-card,body.light-mode .project-card,
+body.light-mode .skill-group,body.light-mode .skill-item{background:#fff!important;color:#0f172a!important;border-color:rgba(255,122,0,.25)!important}
+body.light-mode .section-heading h2,body.light-mode .skills-title h2{color:#0f172a!important}
+body.light-mode .button-ghost{color:#c45b00!important}
+body.light-mode .professional-footer,body.light-mode footer{background:#f1f5f9!important}
+@media(max-width:760px){
+ .hero{display:flex!important;flex-direction:column-reverse!important;min-height:0!important;padding-top:48px!important;padding-bottom:60px!important;gap:34px!important;text-align:center!important}
+ .hero-copy{width:100%!important;max-width:100%!important}
+ .hero-copy .eyebrow{justify-content:center!important}
+ .hero h1{letter-spacing:-2px!important}
+ .hero-description{margin-left:auto!important;margin-right:auto!important}
+ .hero-actions,.home-contact-details{justify-content:center!important}
+ .hero-art{width:100%!important;min-height:390px!important;overflow:visible!important}
+ .hero-art .profile-card{width:min(320px,82vw)!important;height:370px!important}
+ .avatar-wrap{height:340px!important}
+ .scroll-hint{left:24px!important;bottom:8px!important}
+}
+@media(max-width:480px){
+ .hero-art{min-height:350px!important}
+ .hero-art .profile-card{height:330px!important;width:min(285px,82vw)!important}
+ .avatar-wrap{height:310px!important}
+ .hero h1{font-size:clamp(36px,10vw,48px)!important}
+}
