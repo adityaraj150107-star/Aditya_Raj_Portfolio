@@ -64,3 +64,13 @@ document.querySelectorAll('a[href="#contact"]').forEach(link => link.addEventLis
 }));
 const initialSection = location.hash.slice(1);
 document.body.dataset.activeSection = ['resume','projects','contact'].includes(initialSection) ? initialSection : 'home';
+
+
+// Hero "View Project" button: switch to the projects page-like section.
+document.querySelectorAll('a[data-open-projects]').forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    showPortfolioSection('projects');
+    history.replaceState(null, '', '#projects');
+  });
+});
